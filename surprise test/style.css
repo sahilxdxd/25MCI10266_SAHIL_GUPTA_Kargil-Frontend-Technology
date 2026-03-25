@@ -1,0 +1,74 @@
+body {
+    background-color: #fff7ed;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 700px;
+}
+
+.title {
+    text-align: center;
+    color: #ea580c;
+    margin-bottom: 20px;
+}
+
+.card-box {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+input, select {
+    padding: 8px;
+}
+
+button {
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+.add-btn {
+    background: #fb923c;
+    color: white;
+}
+
+.filter-btn {
+    background: white;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+}
+
+.active-btn {
+    background: #fb923c;
+    color: white;
+}
+
+.task {
+    background: white;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    border-left: 5px solid #fb923c;
+    display: flex;
+    justify-content: space-between;
+}
+
+.overdue {
+    border-left: 5px solid red;
+}
+
+.low { color: green; }
+.medium { color: orange; }
+.high { color: red; }
+
+.done {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.small {
+    font-size: 12px;
+}
