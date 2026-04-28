@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium transition-colors duration-200 flex items-center justify-center gap-2;
+  }
+  .btn-primary {
+    @apply bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-secondary {
+    @apply bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-danger {
+    @apply bg-red-600 text-white hover:bg-red-700 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+}
+
+/* Sudoku Grid Lines */
+.sudoku-grid {
+  @apply border-2 border-slate-800 bg-slate-800 gap-[1px] p-[1px];
+}
+
+/* Thick borders for 3x3 subgrids */
+.cell-right-thick {
+  border-right-width: 2px !important;
+  border-right-color: #1e293b !important; /* slate-800 */
+}
+
+.cell-bottom-thick {
+  border-bottom-width: 2px !important;
+  border-bottom-color: #1e293b !important;
+}
+
+/* Hide number input arrows */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
